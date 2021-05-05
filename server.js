@@ -10,6 +10,8 @@ const port = process.env.PORT || 3000
 
 
 app.use(bodyParser.urlencoded({ extended: true }))
+app.set('view engine', 'ejs')
+
 
 
 MongoClient.connect(connectionString, { useUnifiedTopology: true })
@@ -18,13 +20,26 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         const db = client.db('hp-quotes')
         const quotesCollection = db.collection('quotes')
 
-        app.get('/', (req, res) => {
-            res.sendFile('/Users/admin/Downloads/beforeGit/crud-quotes' + '/index.html')
-        })
 
         app.post('/quotes', (req, res) => {
-            console.log(req.body)
+            quotesCollection.insertOne(req.body)
+              .then(result => {
+                res.redirect('/')
+              })
+              .catch(error => console.error(error))
+          })
+
+        app.get('/', (req, res) => {
+            db.collection('quotes').find().toArray()
+                .then(results => {
+                    console.log(results)
+                    // res.sendFile('/Users/admin/Downloads/beforeGit/crud-quotes' + '/index.html')
+                    res.render('index.ejs', { quotes: results })
+                })
+                .catch(error => console.error(error))
+            
         })
+
 
         app.listen(port, () => {
             console.log('Server is up on port ' + port)
