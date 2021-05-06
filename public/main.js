@@ -9,7 +9,7 @@ update.addEventListener('click', _ => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             name: 'Harry Potter',
-            quote: 'And someday when the descendants of humanity have spread from star to star they won’t tell the children about the history of Ancient Earth until they’re old enough to bear it and when they learn they’ll weep to hear that such a thing as Death had ever once existed'
+            quote: ' There is no justice in the laws of nature, no term for fairness in the equations of motion. The Universe is neither evil, nor good, it simply does not care. The stars don`t care, or the Sun, or the sky. But they don`t have to! WE care! There IS light in the world, and it is US!'
         })
     })
         .then(res => {

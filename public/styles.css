@@ -34,11 +34,17 @@ p{
 
 input{
     margin-left:20px;
-    padding:0 5px;
+    padding:4px 20px;
+    width: 10%;
     height:30px;
     border:none;
     outline:none;
     border-radius: 3px;
+}
+
+#quote-input{
+    /* width: 600px; */
+    width: 50%;
 }
 
 .header-green {
