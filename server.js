@@ -21,9 +21,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
   app.use(bodyParser.json())
   app.use(express.static('public'))
 
-  // ========================
   // Routes
-  // ========================
   app.get('/', (req, res) => {
     db.collection('quotes').find().toArray()
       .then(quotes => {
@@ -42,7 +40,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 
   app.put('/quotes', (req, res) => {
     quotesCollection.findOneAndUpdate(
-      { name: 'Dumbledore' },
+      { name: 'Voldemort' },
       {
         $set: {
           name: req.body.name,
@@ -70,9 +68,8 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
       .catch(error => console.error(error))
   })
 
-  // ========================
+
   // Listen
-  // ========================
   const isProduction = process.env.NODE_ENV === 'production'
   const port = isProduction ? 7500 : 3000
   app.listen(port, function () {

@@ -101,7 +101,7 @@ button:hover{
     justify-content: center;
     font-size: 16px;
     padding:6px 0 6px 0;
-    list-style: none;      /* gets rid of bullets*/
+    list-style: none;     
 }
 
 .quote{
@@ -116,5 +116,4 @@ button:hover{
 .quote:hover{
     transition: .4s;
     font-size: 20px;
-    padding: 10px 25px;
 }
