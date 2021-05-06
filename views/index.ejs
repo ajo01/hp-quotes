@@ -7,46 +7,64 @@
     <title>HP Quotes</title>
     <meta charset="utf-8">
    <link rel="stylesheet" href="../src/css/index.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
-    <h1>HP World</h1>
+    <header class="header-green">
+        <h1 data-position="header">HPTMOR WORLD</h1>
+    </header>
+    
 
-    <form action="/quotes" method="POST">
-        <input type="text" placeholder="name" name="name" required>
-        <input type="text" placeholder="quote" name="quote" required>
+    <section data-position="add-quote">
+      <h2>Add Quote</h2>
+
+      <form action="/quotes" method="POST">
+        <input type="text" placeholder="name" name="name" />
+        <input type="text" placeholder="quote" name="quote" />
         <button type="submit">Submit</button>
+      </form>
+    </section>
 
-    </form>
-
-    <h2> Quotes </h2>
-
-    <ul class="quotes">
-
-      <% for(var i = 0; i < quotes.length; i++) {%>
-        <li class="quote">
-
-          <span><%= quotes[i].name %></span>:
-
-          <span><%= quotes[i].quote %></span>
-        </li>
-      <% } %>
-    </ul>
-
-    <div>
+    <section data-position="update-quote">
+      <div>
         <h2>Battle of Wills</h2>
         <p>
-          Replace the first quote of Dumbledore with a quote by Harry Potter
+          Replace first quote by Dumbledore or Voldemort with a quote written by Harry Potter
         </p>
         <button id="update-button">Replace Dumbledore's quote</button>
       </div>
-    
-  </body>
+    </section>
 
-  <footer>
+    <section data-position="delete-quote">
+      <div>
+        <h2>Remove Harry Potter!</h2>
+        <p>
+          Delete one quote by Harry Potter. Do nothing if there are no more
+          quotes by Harry Potter
+        </p>
+        <button id="delete-button">Delete Harry Potter quote</button>
+      </div>
+      <div id="message"></div>
+    </section>
+
+    <section data-position="quotes">
+      <h2>Quotes</h2>
+
+      <ul class="quotes">
+        <% for(var i = 0; i < quotes.length; i++) {%>
+        <li class="quote">
+          <span><%= quotes[i].name %></span>:
+          <span><%= quotes[i].quote %></span>
+        </li>
+        <% } %>
+      </ul>
+    </section>
+
     <script src="/public/main.js"></script>
-  </footer>
+  </body>
+</html>
