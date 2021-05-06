@@ -83,6 +83,18 @@ button:hover{
     padding:10px 30px;
 }
 
+.creator-white{
+    color:white;
+}
+
+.heart{
+    color:rgb(227, 41, 91);
+}
+
+#pink-text{
+    color:rgb(227, 41, 91);
+}
+
 .h2-quotes{
     margin:20px 220px;
     font-size: 30px;
