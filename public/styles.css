@@ -7,7 +7,7 @@
 }
 
 body{
-    background: rgb(25, 49, 43);
+    background: rgb(25, 49, 47);
     color:white;
 }
 
@@ -49,7 +49,7 @@ input{
     justify-content: space-around;
     align-items: center;
     margin:40px 220px;
-    padding: 40px 30px 90px 30px;
+    padding: 50px 30px 90px 30px;
 }
 
 button{
@@ -58,33 +58,22 @@ button{
     border-radius: 3px;
     text-transform: uppercase;
     padding:10px 20px 10px 20px;
-    margin: 10px 20px 30px 20px;
+    margin: 12px 20px 30px 20px;
     letter-spacing: 3px;
-}
-
-#submit-button{
-    background-color: rgb(227, 41, 91);
-    color:white;
-    font-weight: bolder;
-}
-
-#update-button{
-    background-color: white;
-    color:rgb(227, 41, 91);
-}
-
-#delete-button{
     background-color: rgb(227, 41, 91);
     color:white;
 }
+
 
 button:hover{
     transition: 1s;
     padding:10px 30px;
+    background-color: white;
+    color:rgb(227, 41, 91);
 }
 
-.creator-white{
-    color:white;
+.creator-txt{
+
 }
 
 .heart{
