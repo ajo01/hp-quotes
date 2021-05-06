@@ -73,7 +73,7 @@ button:hover{
 }
 
 .creator-txt{
-
+    
 }
 
 .heart{
@@ -96,4 +96,13 @@ button:hover{
     font-size: 16px;
     padding:6px 0 6px 0;
     list-style: none;      /* gets rid of bullets*/
+}
+
+.quote{
+    margin:12px;
+    background-color: rgb(235, 210, 217);
+    color:rgb(227, 41, 91);
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: none;
 }
