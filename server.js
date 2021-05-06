@@ -6,8 +6,6 @@ const app = express()
 
 const port = process.env.PORT || 3000
 
-// const connectionString = 'mongodb+srv://adminQuote:mongo712CH@cluster0.nnlhd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-
 require('dotenv').config({
     path: './secrets/.env'
   })
