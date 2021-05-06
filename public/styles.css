@@ -21,10 +21,7 @@ h2 {
     margin: 5px 20px;
 }
 
-.h2-quotes{
-    margin:20px 220px;
-    font-size: 30px;
-}
+
 
 p{
     margin: 5px 20px;
@@ -43,7 +40,7 @@ input{
     top: 0;
     width: 100%;
     display: flex;
-    letter-spacing: 3px;
+    letter-spacing: 7px;
     font-size: 20px;
 }
 
@@ -56,21 +53,41 @@ input{
 }
 
 button{
-    background-color: rgb(227, 41, 91);
-    /* background-color: #ED4C67; */
     cursor: pointer;
-    color:white;
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
     padding:10px 20px 10px 20px;
-    margin: 10px 20px;
+    margin: 10px 20px 30px 20px;
     letter-spacing: 3px;
+}
+
+#submit-button{
+    background-color: rgb(227, 41, 91);
+    color:white;
+    font-weight: bolder;
+}
+
+#update-button{
+    background-color: white;
+    color:rgb(227, 41, 91);
+}
+
+#delete-button{
+    background-color: rgb(227, 41, 91);
+    color:white;
 }
 
 button:hover{
     transition: 1s;
     padding:10px 30px;
+}
+
+.h2-quotes{
+    margin:20px 220px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color:rgb(227, 41, 91);
 }
 
 .quotes{
