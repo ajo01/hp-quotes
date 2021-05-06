@@ -14,10 +14,16 @@ body{
 h1{
     font-weight: 900px;
     padding: 10px;
+    margin:10px 30px;
 }
 
 h2 {
     margin: 5px 20px;
+}
+
+.h2-quotes{
+    margin:20px 220px;
+    font-size: 30px;
 }
 
 p{
@@ -34,16 +40,19 @@ input{
 }
 
 .header-green {
-    position:relative;
     top: 0;
     width: 100%;
     display: flex;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.dark-form{
+    background-color: rgb(2, 27, 29);
     justify-content: space-around;
     align-items: center;
-    min-height: 12vh;
-    background-color: rgb(2, 27, 29);
-    font-size: 20px;
-    letter-spacing: 4px;
+    margin:40px 220px;
+    padding: 40px 30px 90px 30px;
 }
 
 button{
@@ -60,14 +69,13 @@ button{
 }
 
 button:hover{
-    background-color: rgb(252, 6, 92);
     transition: 1s;
     padding:10px 30px;
 }
 
 .quotes{
-    margin: 5px 10vh;
-    margin-bottom: 40px;
-    font-size: 14px;
+    margin:20px 220px 40px 220px;
+    font-size: 16px;
     padding:6px 0 6px 0;
+    list-style: none;      /* gets rid of bullets*/
 }

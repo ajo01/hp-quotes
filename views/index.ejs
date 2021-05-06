@@ -20,40 +20,43 @@
     </header>
     
 
-    <section data-position="add-quote">
-      <h2>Add Quote</h2>
+    <div class="dark-form">
 
-      <form action="/quotes" method="POST">
-        <input type="text" placeholder="name" name="name" />
-        <input type="text" placeholder="quote" name="quote" />
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <section data-position="update-quote">
-      <div>
-        <h2>Battle of Wills</h2>
-        <p>
-          Replace first quote by Dumbledore or Voldemort with a quote written by Harry Potter
-        </p>
-        <button id="update-button">Replace Dumbledore's quote</button>
-      </div>
-    </section>
-
-    <section data-position="delete-quote">
-      <div>
-        <h2>Remove Harry Potter!</h2>
-        <p>
-          Delete one quote by Harry Potter. Do nothing if there are no more
-          quotes by Harry Potter
-        </p>
-        <button id="delete-button">Delete Harry Potter quote</button>
-      </div>
-      <div id="message"></div>
-    </section>
+        <section data-position="add-quote">
+            <h2>Add Quote</h2>
+      
+            <form action="/quotes" method="POST">
+              <input type="text" placeholder="name" name="name" />
+              <input type="text" placeholder="quote" name="quote" />
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+      
+          <section data-position="update-quote">
+            <div>
+              <h2>Battle of Wills</h2>
+              <p>
+                Replace first quote by Dumbledore or Voldemort with a quote written by Harry Potter
+              </p>
+              <button id="update-button">Replace Dumbledore's quote</button>
+            </div>
+          </section>
+      
+          <section data-position="delete-quote">
+            <div>
+              <h2>Remove Harry Potter!</h2>
+              <p>
+                Delete one quote by Harry Potter. Do nothing if there are no more
+                quotes by Harry Potter
+              </p>
+              <button id="delete-button">Delete Harry Potter quote</button>
+            </div>
+            <div id="message"></div>
+          </section>
+    </div>
 
     <section data-position="quotes">
-      <h2>Quotes</h2>
+      <h2 class="h2-quotes">Quotes</h2>
 
       <ul class="quotes">
         <% for(var i = 0; i < quotes.length; i++) {%>
