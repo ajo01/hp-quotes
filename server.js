@@ -9,8 +9,8 @@ const port = process.env.PORT || 3000
 require('dotenv').config({
     path: './secrets/.env'
   })
-const connectionString = process.env.MONGO_URL
-
+// const connectionString = process.env.MONGO_URL
+const connectionString = process.env.MONGODB_URI;
 
 MongoClient.connect(connectionString, { useUnifiedTopology: true })
     .then(client => {
