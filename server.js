@@ -14,9 +14,7 @@ require('dotenv').config({
 // const connectionString = process.env.MONGO_URL
 
 //heroku
-// const connectionString = process.env.MONGODB_URI;
-
-const connectionString='mongodb+srv://adminQuote:mongo712CH@cluster0.nnlhd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const connectionString = process.env.MONGODB_URI;
 
 MongoClient.connect(connectionString, { useUnifiedTopology: true })
     .then(client => {
