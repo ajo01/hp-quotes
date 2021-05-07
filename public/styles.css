@@ -61,6 +61,7 @@ input{
     align-items: center;
     margin:40px 220px;
     padding: 50px 30px 40px 30px;
+    min-width: 400px;
 }
 
 button{
@@ -117,6 +118,7 @@ button:hover{
     padding: 10px 40px;
     border-radius: 100px;
     border: none;
+    min-width: 400px;
 }
 
 .quote:hover{
